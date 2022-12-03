@@ -28,6 +28,7 @@ class Menu {
 				Characters();
 				break;
 			case "P":
+			case "p":
 				startGame();
 				break;
 			case "Q":
@@ -41,7 +42,7 @@ class Menu {
 
 	public static void startGame() {
 		Board b = new Board();
-		b.printBoard("0","0");
+		b.printBoard();
 	}
 
 	public static void Rule() {

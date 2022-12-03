@@ -3,5 +3,13 @@ class Ninja{
 	private int attack = 15;
 
 
+
+
+	public String getIcon(){
+		return "🥷";
+	}
+
+	
+
 	
 }
