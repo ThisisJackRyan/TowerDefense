@@ -50,16 +50,17 @@ class Menu {
 	}
 
 	public static void Characters() {
+		//try using the first one of these because could get rid of gender?
 		System.out.println("These are the Characters");
-		System.out.println("🥷 -- The Ninja Throws Cards At Zombies in Same Lane Ninja is placed");
-		System.out.println("👮‍♂️ -- Cop Uses flashlight to Kill Vanpires");
+		System.out.println("🤖 -- The Robot Throws Cards At Zombies in Same Lane Ninja is placed");
+		System.out.println("👮-- Cop Uses flashlight to Kill Vanpires");
 		System.out.println("💂 -- One use only but marchs on all monsters in the row");
-		System.out.println("🧞‍♂️ -- takes away devil's ability ot explode ");
-		System.out.println("👨‍🎤 -- cheap but very weak attack");
+		System.out.println("🧞 -- takes away devil's ability ot explode ");
+		System.out.println("💃 -- cheap but very weak attack");
 
 		
 		System.out.println("👹 -- devil explodes after eating good guys");
-		System.out.println("🧟‍♂️ -- Zombie is trying to get you bites hard but is very weak");
-		System.out.println("🧛🏻‍♂️ -- Vampire is trying to get you but is scared of light");
+		System.out.println("🧟 -- Zombie is trying to get you bites hard but is very weak");
+		System.out.println("🧛 -- Vampire is trying to get you but is scared of light");
 	}
 }

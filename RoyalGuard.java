@@ -1,5 +1,3 @@
 class RoyalGuard{
-	public String getIcon(){
-		return "💂";
-	}
+	public static final String ICON = "💂";
 }

@@ -34,7 +34,7 @@ class Board {
 					System.out.print("     ");
 				}
 				else{
-					System.out.print("  " + board[i][j] + "  ");
+					System.out.print(" " + board[i][j] + "  ");
 				}
 			}
 			System.out.print(reset);
@@ -52,11 +52,11 @@ class Board {
 
 		
 		System.out.println("Please Choose Your Chacter:");
-		System.out.println("🥷  || 1");
-		System.out.println("👮‍♂️ || 2");
+		System.out.println("🤖 || 1");
+		System.out.println("👮 || 2");
 		System.out.println("💂 || 3");
-		System.out.println("🧞‍♂️ || 4");
-		System.out.println("👨‍🎤 || 5");
+		System.out.println("🧞 || 4");
+		System.out.println("💃 || 5");
 		int icon = input.nextInt();
 
 		
@@ -72,34 +72,31 @@ class Board {
 		
 	}
 
+
+	
 	public void addCharacter(String x, String y, int num){
 		int col =  Integer.parseInt(x);
 		int row = ((int)(y.charAt(0))-97);
 		String icon = "";
+		//see if ther is a better way to do this other than declaring a new object every time
 		switch(num){
 			case 1: 
-				Ninja a = new Ninja();
-				icon = a.getIcon();
+				icon = Robot.ICON;
 				break;
 			case 2: 
-				Cop b = new Cop();
-				icon = b.getIcon(); 
+				icon = Cop.ICON;
 				break;
 			case 3: 
-				RoyalGuard c = new RoyalGuard();
-				icon = c.getIcon(); 
+				 icon = RoyalGuard.ICON;
 				break;
 			case 4:
-				Genie d = new Genie();
-				icon = d.getIcon(); 
+				icon = Genie.ICON; 
 				break;
 			case 5: 
-				BadBoy e = new BadBoy();
-				icon = e.getIcon();
+				icon = Dancer.ICON;
 				break;
 			default: 
-				Ninja i = new Ninja();
-				icon = i.getIcon();
+				icon = Robot.ICON;
 				break;
 		}
 		board[row][col] = icon;
