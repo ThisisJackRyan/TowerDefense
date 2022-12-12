@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 class Menu {
@@ -17,6 +16,7 @@ class Menu {
 	}
 
 	public static void CheckAwnser(String awnser) {
+		Board.clear();
 		switch (awnser) {
 			case "M":
 				System.out.print("No Worky");
