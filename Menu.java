@@ -5,7 +5,6 @@ class Menu {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Hello And Welcome to my game!!!");
 		System.out.println("Please Select an option using the character on the left");
-		System.out.println("M || Menu");
 		System.out.println("R || Rules");
 		System.out.println("C || Characters");
 		System.out.println("P || Play");
@@ -13,6 +12,7 @@ class Menu {
 
 		String awnser = input.nextLine();
 		CheckAwnser(awnser);
+		input.close();
 	}
 
 	public static void CheckAwnser(String awnser) {
@@ -46,21 +46,20 @@ class Menu {
 	}
 
 	public static void Rule() {
-		System.out.print("The rules for the game is as follow");
+		System.out.println("The rules for the game is as follow: ");
+		System.out.println(" -- You start the Game with 30 Gold each character cost 30 gold.");
+		System.out.println(" -- Every Kill gives you fifteen Gold. ");
+		System.out.println(" -- You also get 5 for skipping a round.");
+		System.out.println(" -- But be carful if the Monsters get to the end of the yard you LOSE!!!!");
 	}
 
 	public static void Characters() {
-		//try using the first one of these because could get rid of gender?
 		System.out.println("These are the Characters");
-		System.out.println("🤖 -- The Robot Throws Cards At Zombies in Same Lane Ninja is placed");
-		System.out.println("👮-- Cop Uses flashlight to Kill Vanpires");
-		System.out.println("💂 -- One use only but marchs on all monsters in the row");
-		System.out.println("🧞 -- takes away devil's ability ot explode ");
-		System.out.println("💃 -- cheap but very weak attack");
+		System.out.println("🤖 -- The Robot kills Zombie");
+		System.out.println("👮-- The Cop kills Vampire");
+		System.out.println("💂 -- The Royal Guard kills both Zombie and Devil But dies trying");
+		System.out.println("🧞 -- The Genie kills both Vampire and Devil but dies trying");
+		System.out.println("💃 -- The Dancer Kills Devil");
 
-		
-		System.out.println("👹 -- devil explodes after eating good guys");
-		System.out.println("🧟 -- Zombie is trying to get you bites hard but is very weak");
-		System.out.println("🧛 -- Vampire is trying to get you but is scared of light");
 	}
 }

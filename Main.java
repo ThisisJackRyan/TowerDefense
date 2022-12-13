@@ -1,5 +1,5 @@
 class Main {
-  public static void main(String[] args) {
-	  Menu.intro();
-  }
+	public static void main(String[] args) {
+		Menu.intro();
+	}
 }
