@@ -1,0 +1,4 @@
+*.class
+.replit
+.nix
+.breakpoints
